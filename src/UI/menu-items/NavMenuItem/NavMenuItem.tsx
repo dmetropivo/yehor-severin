@@ -1,8 +1,14 @@
 import styles from './NavMenuItem.module.scss';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { FC, useEffect, useState } from 'react';
 
-const NavMenuItem = ({ href, text, asPath }) => {
+interface INavMenuItem {
+  href?: any;
+  text?: string;
+  asPath?: string;
+}
+
+const NavMenuItem: FC<INavMenuItem> = ({ href = '/', text, asPath }) => {
   const [isActive, setIsActive] = useState(false);
   useEffect(() => {
     setIsActive(asPath === href);
