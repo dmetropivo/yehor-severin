@@ -3,6 +3,7 @@ import { FC, ReactNode } from 'react';
 
 interface ISvgButton {
   children: ReactNode;
+  onClick: () => void;
 }
 
 const SVGButton: FC<ISvgButton> = ({ children, onClick }) => {
