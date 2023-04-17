@@ -2,8 +2,8 @@ import styles from './SVGButton.module.scss';
 import { FC, ReactNode } from 'react';
 
 interface ISvgButton {
-  children: ReactNode;
-  onClick: () => void;
+  children?: ReactNode;
+  onClick?: () => void;
 }
 
 const SVGButton: FC<ISvgButton> = ({ children, onClick }) => {
