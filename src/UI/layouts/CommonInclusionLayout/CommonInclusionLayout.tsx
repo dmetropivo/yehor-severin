@@ -1,6 +1,11 @@
 import FontsAndFavicons from '@/common/components/FontsAndFavicons/FontsAndFavicons';
+import { FC, ReactNode } from 'react';
 
-const CommonInclusionLayout = ({ children }) => {
+interface ICommonInclusionLayout {
+  children: ReactNode;
+}
+
+const CommonInclusionLayout: FC<ICommonInclusionLayout> = ({ children }) => {
   return (
     <>
       <FontsAndFavicons />
