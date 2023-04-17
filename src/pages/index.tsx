@@ -27,10 +27,7 @@ Home.messages = ['Common'];
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      messages: pick(
-        (await import(`../intl/${locale}/${locale}.ts`)).default,
-        Home.messages,
-      ),
+      messages: pick((await import(`../intl/en/en.ts`)).default, Home.messages),
     },
   };
 }
