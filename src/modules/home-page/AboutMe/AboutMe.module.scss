@@ -1,0 +1,15 @@
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  h2 {
+    font-weight: 600;
+    font-size: var(--text-font-size-h2);
+    line-height: var(--text-line-height-h2);
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

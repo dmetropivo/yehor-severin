@@ -1,0 +1,32 @@
+@import "src/styles/mediaQuery";
+
+.navMenuContainer {
+  display: flex;
+  justify-content: center;
+  padding: 286px 0 0 0 ;
+  ul {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 56px;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+@media (max-width: $maxL) {
+  .navMenuContainer {
+    width: 375px;
+  }
+}
+@media (max-width: $maxM) {
+  .navMenuContainer {
+    width: 273px;
+  }
+}
+@media (max-width: $maxS) {
+  .navMenuContainer {
+    width: 184px;
+  }
+}

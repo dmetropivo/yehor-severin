@@ -1,0 +1,19 @@
+.navMenuItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: var(--text-font-size-body2);
+  line-height: var(--text-line-height-body2);
+  .activeIndicator {
+    background-color: transparent;
+    width: 6px;
+    height: 21px;
+    border-radius: 0 20px;
+    margin-right: 8px;
+  }
+  &.active {
+    .activeIndicator {
+        background-color: var(--color-primary);
+    }
+  }
+}

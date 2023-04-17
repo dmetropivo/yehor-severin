@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  min-width: fit-content;
+  font-family: var(--font-family-primary);
+  border: none;
+  &.primary {
+    border-radius: 15px;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 12px 32px;
+    background-color: var(--color-primary);
+    color: var(--color-text1);
+    font-weight: 600;
+    &:hover, &:focus {
+      opacity: 0.9;
+    }
+    &:disabled {
+      cursor: default;
+      pointer-events: none;
+      opacity: 0.4;
+    }
+    &:active {
+      background-color: #a25bff;
+    }
+
+  }
+  &.secondary {
+    padding: 12px 36px;
+  }
+}
