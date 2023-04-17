@@ -25,7 +25,6 @@ module.exports = {
   },
   plugins: ['react', 'prettier', '@typescript-eslint'],
   rules: {
-    allowImportingTsExtensions: 'off',
     'react/display-name': 'off',
     'no-throw-literal': 'off',
     'no-return-assign': 'off',
