@@ -25,6 +25,7 @@ module.exports = {
   },
   plugins: ['react', 'prettier', '@typescript-eslint'],
   rules: {
+    'import/order': 'warn',
     'react/display-name': 'off',
     'no-throw-literal': 'off',
     'no-return-assign': 'off',
@@ -97,5 +98,7 @@ module.exports = {
     'jsx-a11y/iframe-has-title': 'warn',
     'react/no-unknown-property': 'warn',
     'jsx-a11y/img-redundant-alt': 'warn',
+
+    'react/self-closing-comp': 'warn',
   },
 };

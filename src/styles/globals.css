@@ -2,9 +2,9 @@
   --font-family-primary: 'SF-Pro-Rounded', sans-serif;
 
   --site-background: #101014;
-  --color-primary: #9747FF;
+  --color-primary: #9747ff;
 
-  --color-text1: #FFFFFF;
+  --color-text1: #ffffff;
 
   --text-font-size-body1: 16px;
   --text-line-height-body1: 19px;
@@ -44,8 +44,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
-
 
 a {
   color: inherit;
