@@ -84,7 +84,7 @@ module.exports = {
     'react/no-danger': 'off',
     'no-unused-expressions': 'off',
     'import/no-absolute-path': 'off',
-    '@typescript-eslint/ban-ts-comment': 'warn',
+    '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-var-requires': 0,
     '@typescript-eslint/no-empty-function': 'warn',
     'prefer-rest-params': 'warn',
