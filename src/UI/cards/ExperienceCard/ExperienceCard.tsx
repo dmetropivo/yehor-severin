@@ -6,7 +6,7 @@ interface IExperienceCard {
   title: string;
   description: string;
   backgroundColor: string;
-  buttons: any[];
+  buttons: any;
 }
 
 const ExperienceCard: FC<IExperienceCard> = ({
