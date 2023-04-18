@@ -1,18 +1,31 @@
 .navMenuItem {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
   display: flex;
   flex-direction: row;
   align-items: center;
   font-size: var(--text-font-size-body2);
   line-height: var(--text-line-height-body2);
+  :hover {
+    opacity: 0.7;
+  }
   .activeIndicator {
-    background-color: transparent;
+    //background-color: transparent;
+    opacity: 0;
     width: 6px;
     height: 21px;
     border-radius: 0 20px;
     margin-right: 8px;
   }
-  &.active {
+}
+.active {
+  .navMenuItem {
+    pointer-events: none;
+    cursor: default;
     .activeIndicator {
+      opacity: 1;
+      transition: 6ms;
       background-color: var(--color-primary);
     }
   }

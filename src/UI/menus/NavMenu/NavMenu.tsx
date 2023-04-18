@@ -1,24 +1,23 @@
 import { useTranslations } from 'use-intl';
-import Link from 'next/link';
 import styles from './NavMenu.module.scss';
 import NavMenuItem from '@/UI/menu-items/NavMenuItem/NavMenuItem';
 import { useRouter } from 'next/router';
 
 const menuData = [
   {
-    link: '/#about-me',
+    id: 'aboutMe',
     textKey: 'navMenu.aboutMe',
   },
   {
-    link: '/#projects',
+    id: 'projects',
     textKey: 'navMenu.projects',
   },
   {
-    link: '/#skills',
+    id: 'skills',
     textKey: 'navMenu.skills',
   },
   {
-    link: '/#courses',
+    id: 'courses',
     textKey: 'navMenu.courses',
   },
 ];
@@ -34,9 +33,9 @@ const NavMenu = () => {
           return (
             <li key={index}>
               <NavMenuItem
+                id={item.id}
                 asPath={router.asPath}
                 text={t(`${item.textKey}`)}
-                href={item.link}
               />
             </li>
           );

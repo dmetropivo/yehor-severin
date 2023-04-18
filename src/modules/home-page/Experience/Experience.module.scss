@@ -1,0 +1,27 @@
+@import 'src/styles/mediaQuery';
+.experienceContainer {
+  padding-top: 90px;
+  & > h2 {
+    font-weight: 600;
+    font-size: var(--text-font-size-h2);
+    line-height: var(--text-line-height-h2);
+    margin-bottom: 44px;
+  }
+}
+.experienceList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 56px;
+  column-gap: 56px;
+}
+.behanceButton {
+  background-color: #101014;
+}
+
+@media (max-width: $maxM) {
+  .experienceList {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}

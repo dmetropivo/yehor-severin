@@ -1,7 +1,18 @@
-.homePageViewContainer {
-  padding: 60px 0 90px;
+@import 'src/styles/mediaQuery';
+
+.aboutMeContainer {
+  padding-top: 60px;
 }
 .safeAreaContainer {
   width: 100%;
   padding-right: 24px;
+}
+.projectsContainer {
+  padding-top: 90px;
+}
+
+@media (min-width: $minL) {
+  .safeAreaContainer {
+    padding-right: 65px;
+  }
 }

@@ -3,12 +3,13 @@
 .navMenuContainer {
   display: flex;
   justify-content: center;
-  padding: 286px 0 0 0;
   ul {
     padding-left: 0px;
     display: flex;
     flex-direction: column;
     row-gap: 56px;
+    position: fixed;
+    margin-top: 286px;
     li {
       list-style: none;
     }

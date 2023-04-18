@@ -21,7 +21,7 @@ const Home = () => {
   );
 };
 
-Home.messages = ['Common'];
+Home.messages = ['Common', 'Home'];
 
 export async function getStaticProps() {
   return {

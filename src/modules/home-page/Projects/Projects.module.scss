@@ -1,0 +1,15 @@
+.projectsContainer {
+  & > h2 {
+    font-weight: 600;
+    font-size: var(--text-font-size-h2);
+    line-height: var(--text-line-height-h2);
+    margin-bottom: 44px;
+  }
+}
+.projectList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 40px;
+}
