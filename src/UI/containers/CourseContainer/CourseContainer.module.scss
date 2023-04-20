@@ -1,0 +1,90 @@
+@import "src/styles/mediaQuery";
+
+.courseContainer {
+  width: fit-content;
+  border-radius: 15px;
+  background-color: #26262F;
+  padding: 34px 24px;
+}
+.infoSection {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 32px;
+  align-items: center;
+  & > div:first-of-type {
+    margin-right: 24px;
+  }
+  & > div:last-of-type {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    & > p:first-of-type {
+      font-size: var(--text-font-size-body4);
+      line-height: var(--text-line-height-body4);
+      color: #FFFFFF;
+      font-weight: 500;
+    }
+    & > p:last-of-type {
+      font-size: 24px;
+      line-height: 28px;
+      color: #FFFFFFB2;
+      font-weight: 500;
+    }
+  }
+}
+
+.stillOngoing {
+  height: 100%;
+  display: flex;
+  margin-left: auto;
+  min-width: fit-content;
+  & > span {
+    top: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    margin-left: 8px;
+  }
+}
+
+.itemsSection {
+  display: flex;
+  flex-direction: row;
+  row-gap: 16px;
+  column-gap: 16px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: $maxM) {
+  .courseContainer {
+    padding: 24px 18px;
+  }
+  .infoSection {
+    & > div:first-of-type {
+      margin-right: 17px;
+    }
+    & > div:last-of-type {
+      row-gap: 10px;
+      & > p:first-of-type {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      & > p:last-of-type {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+}
+.mobSquare{
+  @media (max-width: $maxS) {
+      padding: 16px;
+    p {
+      font-size: 10px;
+      line-height: 12px;
+    }
+  }
+}
+
+

@@ -20,4 +20,14 @@ export const Home = {
   projects: {
     title: 'Projects',
   },
+
+  skills: {
+    title: 'Skills',
+    hard: 'Hard',
+    soft: 'Soft',
+  },
+
+  courses: {
+    title: 'Courses',
+  },
 };

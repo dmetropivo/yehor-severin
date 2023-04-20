@@ -1,0 +1,21 @@
+.skillsContainer {
+  h2 {
+    font-weight: 600;
+    font-size: var(--text-font-size-h2);
+    line-height: var(--text-line-height-h2);
+    padding-bottom: 48px;
+  }
+
+  & > div {
+    & > p {
+      font-size: var(--text-font-size-body3);
+      line-height: var(--text-line-height-body4);
+      color: var(--color-text2);
+      margin-bottom: 24px;
+    }
+  }
+
+  & > div:first-of-type {
+    margin-bottom: 48px;
+  }
+}

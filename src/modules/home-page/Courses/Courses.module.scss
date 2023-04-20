@@ -1,0 +1,23 @@
+@import "src/styles/mediaQuery";
+
+.coursesContainer {
+  & > h2 {
+    font-weight: 600;
+    font-size: var(--text-font-size-h2);
+    line-height: var(--text-line-height-h2);
+    margin-bottom: 44px;
+  }
+  & > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 44px;
+  }
+}
+
+@media (max-width: $maxM) {
+  .coursesContainer {
+    & > div {
+      row-gap: 24px;
+    }
+  }
+}

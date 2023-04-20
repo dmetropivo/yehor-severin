@@ -1,6 +1,7 @@
 @import 'src/styles/mediaQuery';
 
 .navMenuContainer {
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   ul {
@@ -9,25 +10,32 @@
     flex-direction: column;
     row-gap: 56px;
     position: fixed;
-    margin-top: 286px;
+    margin-top: 260px;
     li {
       list-style: none;
     }
   }
 }
 
-@media (max-width: $maxL) {
+@media (min-width: $minXL) {
   .navMenuContainer {
     width: 375px;
   }
 }
+@media (max-width: $maxL) {
+  .navMenuContainer {
+    //width: 375px;
+    width: 273px;
+
+  }
+}
 @media (max-width: $maxM) {
   .navMenuContainer {
-    width: 273px;
+    width: 184px;
   }
 }
 @media (max-width: $maxS) {
   .navMenuContainer {
-    width: 184px;
+    display: none;
   }
 }

@@ -7,8 +7,33 @@
   width: 100%;
   padding-right: 24px;
 }
-.projectsContainer {
+.projectsContainer, .coursesContainer, .skillsContainer {
   padding-top: 90px;
+  padding-bottom: 88px;
+}
+
+@media (max-width: $maxL) {
+  .coursesContainer {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width: $maxM) {
+  .coursesContainer {
+    padding-bottom: 72px;
+  }
+}
+@media (max-width: $maxS) {
+  .coursesContainer {
+    padding-bottom: 56px;
+  }
+  .safeAreaContainer {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .skillsContainer {
+    padding-left: 16px;
+  }
 }
 
 @media (min-width: $minL) {

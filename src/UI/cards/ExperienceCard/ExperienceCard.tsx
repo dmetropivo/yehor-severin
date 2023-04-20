@@ -1,5 +1,6 @@
 import styles from './ExperienceCard.module.scss';
 import { FC } from 'react';
+import Link from 'next/link';
 
 interface IExperienceCard {
   date: string;

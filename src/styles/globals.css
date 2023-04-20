@@ -3,6 +3,9 @@
 
   --site-background: #101014;
   --color-primary: #9747ff;
+  --color-secondary: #2C862A;
+  --color-secondary2: #E6558F;
+  --color-secondary3: #3340B4;
 
   --color-text1: #ffffff;
   --color-text2: #ffffffb2;
@@ -15,6 +18,9 @@
 
   --text-font-size-body3: 24px;
   --text-line-height-body3: 28px;
+
+  --text-font-size-body4: 28px;
+  --text-line-height-body4: 34px;
 
   --text-font-size-h2: 48px;
   --text-line-height-h2: 58px;
@@ -62,7 +68,7 @@ h5 {
 
 .container {
   margin: 0 auto;
-  max-width: 1512px;
+  max-width: 1920px;
   width: 100%;
 }
 

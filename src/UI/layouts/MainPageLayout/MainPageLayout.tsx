@@ -1,6 +1,7 @@
 import NavMenu from '@/UI/menus/NavMenu/NavMenu';
 import styles from './MainPageLayout.module.scss';
 import { FC, ReactNode } from 'react';
+import Footer from '@/UI/footer/Footer/Footer';
 
 interface IMainPageLayout {
   children: ReactNode;
@@ -13,7 +14,9 @@ const MainPageLayout: FC<IMainPageLayout> = ({ children }) => {
         <NavMenu />
         <div className={styles.contentSide}>{children}</div>
       </main>
-      <div className={'footer container'}>FOOTER</div>
+      <div className={'container'}>
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,47 @@
+.skillsSlider {
+  display: flex;
+  position: relative;
+  & > * {
+    white-space: nowrap;
+  }
+
+  .swiper {
+    margin-left: 0;
+    margin-right: 0;
+    :global(.swiper-slide) {
+      width: unset !important;
+    }
+    :global(.swiper-slide):first-child {
+      //margin-left: 24px;
+    }
+    :global(.swiper-slide):last-child {
+      margin-right: 0 !important;
+    }
+  }
+}
+
+//.allItemsInView {
+//  padding: 0px;
+//
+//  .swiper {
+//    margin: 0;
+//    padding-left: 0px;
+//
+//    :global(.swiper-slide):first-child {
+//      margin-left: 0px !important;
+//    }
+//
+//    :global(.swiper-slide):last-child {
+//      margin-right: 0px !important;
+//    }
+//  }
+//}
+
+//@media (max-width: 767px) {
+//  .container {
+//    padding: 0;
+//    .swiper {
+//      padding-left: 0;
+//    }
+//  }
+//}

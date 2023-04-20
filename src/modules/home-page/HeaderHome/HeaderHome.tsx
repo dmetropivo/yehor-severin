@@ -6,6 +6,7 @@ import BehanceIcon from 'public/svg/behanceIcon.svg';
 import TelegramIcon from 'public/svg/telegram.svg';
 import DribbleIcon from 'public/svg/dribble.svg';
 import LinkedIn from 'public/svg/linkedIn.svg';
+import Link from 'next/link';
 
 const HeaderHome = () => {
   return (
@@ -29,18 +30,31 @@ const HeaderHome = () => {
       </div>
       <div className={styles.separateLine} />
       <div className={styles.socialsContainer}>
-        <SVGButton>
-          <BehanceIcon />
-        </SVGButton>
-        <SVGButton>
-          <DribbleIcon />
-        </SVGButton>
-        <SVGButton>
-          <TelegramIcon />
-        </SVGButton>
-        <SVGButton>
-          <LinkedIn />
-        </SVGButton>
+        <Link href={'https://www.behance.net/bf525e73/projects'}>
+          <SVGButton>
+            <BehanceIcon />
+          </SVGButton>
+        </Link>
+        <Link href={'https://dribbble.com/jaga00'} passHref target={'_blank'}>
+          <SVGButton>
+            <DribbleIcon />
+          </SVGButton>
+        </Link>
+
+        <Link href={'https://t.me/jaga00000'} passHref target={'_blank'}>
+          <SVGButton>
+            <TelegramIcon />
+          </SVGButton>
+        </Link>
+        <Link
+          href={'https://www.linkedin.com/in/yehor-severin-89a4561aa'}
+          passHref
+          target={'_blank'}
+        >
+          <SVGButton>
+            <LinkedIn />
+          </SVGButton>
+        </Link>
       </div>
     </div>
   );
