@@ -14,7 +14,7 @@ const MainPageLayout: FC<IMainPageLayout> = ({ children }) => {
         <NavMenu />
         <div className={styles.contentSide}>{children}</div>
       </main>
-      <div className={'container'}>
+      <div className={styles.footerContainer}>
         <Footer />
       </div>
     </div>

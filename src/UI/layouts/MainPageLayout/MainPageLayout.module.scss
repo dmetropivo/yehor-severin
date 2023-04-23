@@ -11,6 +11,11 @@
   width: 100%;
 }
 
+.footerContainer {
+  border-top: 1px solid rgba(151, 71, 255, 0.8);
+
+}
+
 @media (min-width: $minXL) {
   .contentSide {
     width: calc(100% - 375px);

@@ -20,6 +20,33 @@ export const hardSkills = [
   {
     name: 'After Effects (beginner)',
   },
+  {
+    name: 'Readymag',
+  },
+  {
+    name: 'User persona',
+  },
+  {
+    name: 'Interviews',
+  },
+  {
+    name: 'Html/Css',
+  },
+  {
+    name: 'Design Thinking',
+  },
+  {
+    name: 'LO-FI & HI-FI wireframing',
+  },
+  {
+    name: 'Animation in Figma',
+  },
+  {
+    name: 'Material Design/HID',
+  },
+  {
+    name: 'UI kit',
+  },
 ];
 export const softSkills = [
   {

@@ -1,0 +1,36 @@
+@import "src/styles/mediaQuery";
+.mobileMenu {
+  position: relative;
+  display: none;
+}
+.menuList {
+  transition: 0.3ms;
+  &.opened {
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(50px);
+    border-radius: 20px;
+    right: 20px;
+    padding: 12px;
+    position: absolute;
+    margin-top: 44px;
+    flex-direction: column;
+    row-gap: 32px;
+    display: flex;
+    opacity: 1;
+    z-index: 6;
+  }
+
+  &.closed {
+    display: none;
+    opacity: 0
+  }
+}
+
+@media (max-width: $maxS) {
+  .mobileMenu {
+    display: flex;
+    button {
+      background-color: #101014;
+    }
+  }
+}

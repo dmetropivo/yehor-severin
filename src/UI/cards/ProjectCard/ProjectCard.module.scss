@@ -1,13 +1,71 @@
+@import "src/styles/mediaQuery";
+
 .projectCard {
   max-width: 516px;
   width: 100%;
   background: #26262f;
   border-radius: 20px;
   .imageSection {
+    position: relative;
     width: 100%;
     height: 402px;
     padding: 4px 4px 0 4px;
+    border-radius: 20px;
+  }
+  .backgroundImage {
+    border-radius: 20px;
   }
   .textSection {
+    padding: 28px 20px;
+    & > p:first-of-type {
+      margin-bottom: 16px;
+      font-size: var(--text-font-size-body4);
+      line-height: var(--text-line-height-body4);
+      font-weight: 700;
+    }
+    & > p:last-of-type {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 400;
+    }
+  }
+  .comingSoon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: $maxS) {
+  .projectCard {
+    max-width: 332px;
+    .imageSection {
+      height: 252px;
+      .backgroundImage {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .textSection {
+      padding: 6px 12px 26px 12px;
+      & > p:first-of-type {
+        font-size: 17px;
+        line-height: 21px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+      & > p:last-of-type {
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: 400;
+      }
+    }
   }
 }

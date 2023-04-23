@@ -9,10 +9,12 @@
 }
 .projectsContainer, .coursesContainer, .skillsContainer {
   padding-top: 90px;
-  padding-bottom: 88px;
 }
 
 @media (max-width: $maxL) {
+  .projectsContainer, .coursesContainer, .skillsContainer {
+    padding-top: 90px;
+  }
   .coursesContainer {
     padding-bottom: 80px;
   }
@@ -24,6 +26,9 @@
   }
 }
 @media (max-width: $maxS) {
+  .projectsContainer, .coursesContainer, .skillsContainer {
+    padding-top: 80px;
+  }
   .coursesContainer {
     padding-bottom: 56px;
   }

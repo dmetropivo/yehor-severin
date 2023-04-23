@@ -25,3 +25,8 @@
     flex-direction: column;
   }
 }
+@media (max-width: $maxS) {
+.experienceContainer {
+  padding-top: 48px;
+}
+}

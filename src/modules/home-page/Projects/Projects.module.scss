@@ -1,3 +1,5 @@
+@import "src/styles/mediaQuery";
+
 .projectsContainer {
   & > h2 {
     font-weight: 600;
@@ -12,4 +14,10 @@
   flex-wrap: wrap;
   column-gap: 40px;
   row-gap: 40px;
+}
+
+@media (max-width: $maxS) {
+  .projectList {
+    justify-content: center;
+  }
 }

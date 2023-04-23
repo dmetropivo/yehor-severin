@@ -7,6 +7,7 @@ import TelegramIcon from 'public/svg/telegram.svg';
 import DribbleIcon from 'public/svg/dribble.svg';
 import LinkedIn from 'public/svg/linkedIn.svg';
 import Link from 'next/link';
+import MobileMenu from '@/UI/buttons/MobileMenu/MobileMenu';
 
 const HeaderHome = () => {
   return (
@@ -24,11 +25,15 @@ const HeaderHome = () => {
             <p>UI/UX Designer in Kyiv</p>
           </div>
         </div>
-        <div className={styles.buttonSection}>
+        <div className={styles.desktopContactMe}>
           <Button text={'Contact me'} variant={'primary'} />
         </div>
+        <MobileMenu />
       </div>
       <div className={styles.separateLine} />
+      <div className={styles.contactMeMobile}>
+        <Button text={'Contact me'} variant={'primary'} />
+      </div>
       <div className={styles.socialsContainer}>
         <Link href={'https://www.behance.net/bf525e73/projects'}>
           <SVGButton>
