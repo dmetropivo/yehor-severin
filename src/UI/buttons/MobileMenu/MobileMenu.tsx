@@ -11,23 +11,21 @@ const MobileMenu = () => {
   const [isClosed, setIsClosed] = useState(true);
 
   useEffect(() => {
-    document.addEventListener('click', (event) => {
-      const target = event.target;
+    document.addEventListener('click', (event: any) => {
+      const target = event?.target;
       const isOpen = document.getElementById('menuList');
-      console.log(target.classList.contains('menuTarget'));
-      console.log(isOpen.classList);
 
       if (
-        isOpen.classList.contains('isOpen') &&
-        !target.classList.contains('menuTarget')
+        isOpen?.classList.contains('isOpen') &&
+        !target?.classList.contains('menuTarget')
       ) {
         setIsClosed(true);
       } else if (
-        isOpen.classList.contains('isOpen') &&
-        target.classList.contains('menuTarget')
+        isOpen?.classList.contains('isOpen') &&
+        target?.classList.contains('menuTarget')
       ) {
         setIsClosed(true);
-      } else if (target.classList.contains('menuTarget')) {
+      } else if (target?.classList.contains('menuTarget')) {
         setIsClosed(false);
       }
     });
