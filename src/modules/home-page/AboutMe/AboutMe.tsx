@@ -1,7 +1,6 @@
 import Button from '@/UI/buttons/Button/Button';
 import styles from './AboutMe.module.scss';
 import { useTranslations } from 'use-intl';
-import Link from 'next/link';
 
 const AboutMe = () => {
   const t = useTranslations('Home');
@@ -10,15 +9,9 @@ const AboutMe = () => {
       <h2>{t('aboutMe.title')}</h2>
       <p>{t('aboutMe.text')}</p>
       <div>
-        <Link
-          passHref
-          href="/CV/CV-7.pdf"
-          alt="CV"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/CV/CV-7.pdf" target="_blank" rel="noopener noreferrer">
           <Button text={'Download resume'} variant={'primary'} />
-        </Link>
+        </a>
       </div>
     </div>
   );
