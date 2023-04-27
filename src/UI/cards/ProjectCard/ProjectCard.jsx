@@ -33,7 +33,7 @@ const ProjectCard = ({
   clickable = false,
 }) => {
   const [popupOpen, setPopupOpen] = useState(false);
-  const popup: any = usePopup();
+  const popup = usePopup();
 
   const handleClick = () => {
     if (id === 'clothesStore') {
