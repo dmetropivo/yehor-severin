@@ -6,13 +6,13 @@ import { usePopup } from '@/contexts/PopupContext';
 
 interface IProjectCard {
   id: string;
-  title?: string | null;
-  description?: string | null;
-  backgroundColor?: string | '';
+  title?: any;
+  description?: any;
+  backgroundColor?: any;
   backgroundImage?: any;
-  comingSoon?: boolean;
+  comingSoon?: any;
   link?: any;
-  clickable?: boolean;
+  clickable?: any;
 }
 
 // const ProjectImage = ({project}) => {
