@@ -26,10 +26,9 @@ const ProjectCard = ({
   id,
   title = '',
   description = '',
-  backgroundColor = '',
-  backgroundImage = null,
+  backgroundImage,
   comingSoon = false,
-  link = '',
+  link,
   clickable = false,
 }) => {
   const [popupOpen, setPopupOpen] = useState(false);

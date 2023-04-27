@@ -17,10 +17,10 @@ const Projects = () => {
               id={item.id}
               title={item.title}
               description={item.description}
-              backgroundImage={item?.backgroundImage}
+              backgroundImage={item.backgroundImage}
               backgroundColor={item.backgroundColor}
               comingSoon={item.comingSoon}
-              link={item?.link}
+              link={item.link}
               clickable={item.clickable}
             />
           );
