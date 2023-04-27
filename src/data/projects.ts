@@ -7,14 +7,18 @@ export const projects = [
     backgroundColor: '#D8D8D8',
     backgroundImage: '/images/backgroundOctoTower.png',
     comingSoon: false,
+    link: 'https://www.behance.net/gallery/153037291/Octo-Tower',
+    clickable: true,
   },
   {
     id: 'playStore',
     title: 'Play Store',
     description: 'A mobile application for the world of games',
     backgroundColor: '#3340B4',
-    backgroundImage: null,
+    backgroundImage: '/images/backgroundPlayStore.png',
     comingSoon: false,
+    link: 'https://www.behance.net/gallery/155958881/Play-store-mobile-app',
+    clickable: true,
   },
   {
     id: 'cvMaker',
@@ -23,6 +27,8 @@ export const projects = [
     backgroundColor: '#52F273',
     backgroundImage: '/images/backgroundCVMaker.png',
     comingSoon: false,
+    link: 'https://dribbble.com/shots/21121434-CV-Maker-for-App-Store',
+    clickable: true,
   },
   {
     id: 'clothesStore',
@@ -32,6 +38,8 @@ export const projects = [
     backgroundColor: '#868686',
     backgroundImage: '/images/backgroundClothesStore.png',
     comingSoon: false,
+    link: null,
+    clickable: true,
   },
   {
     id: 'designSystem',
@@ -40,6 +48,8 @@ export const projects = [
     backgroundColor: '',
     backgroundImage: '/images/designSystem.png',
     comingSoon: false,
+    link: 'https://dribbble.com/shots/21228074-Design-System-mobile-app',
+    clickable: true,
   },
   {
     id: 'itCourses',
@@ -48,5 +58,7 @@ export const projects = [
     backgroundColor: '',
     backgroundImage: '/images/backgroundComingSoon.png',
     comingSoon: true,
+    link: null,
+    clickable: false,
   },
 ];

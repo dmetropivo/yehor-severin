@@ -1,0 +1,134 @@
+@import "src/styles/mediaQuery";
+
+.clothesStorePopup {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #101014;
+  overflow: scroll;
+  z-index: 10;
+  .popupHeader {
+    //position: fixed;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0px 22px 0px;
+    margin-left: 38px;
+    margin-right: 38px;
+    border-bottom: 0.5px solid #9747FF;
+    margin-bottom: 32px;
+  }
+  .buttonClose {
+    cursor: pointer;
+  }
+  .buttonClose:hover {
+    opacity: 0.7;
+  }
+  .titlePopup {
+    font-size: 64px;
+    line-height: 76px;
+    font-weight: 400;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+  }
+  .topSection {
+    padding: 0px 38px;
+  }
+  .textSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    & > p:first-of-type {
+      font-size: 28px;
+      line-height: 34px;
+      color: #FFFFFFCC;
+      font-weight: 300;
+      width: 415px;
+    }
+    & > p:last-of-type {
+      font-size: 28px;
+      line-height: 34px;
+      color: #FFFFFFCC;
+      font-weight: 300;
+
+    }
+  }
+  .sliderSection {
+    margin-left: 38px;
+    margin-bottom: 104px;
+  }
+}
+.image {
+  border-radius: 40px;
+}
+@media (max-width: $maxM) {
+  .clothesStorePopup {
+    .titlePopup {
+      font-size: 48px;
+      line-height: 57px;
+    }
+    .textSection {
+      margin-bottom: 72px;
+      & > p:first-of-type {
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFFCC;
+        margin-bottom: 24px;
+        width: 364px;
+      }
+      & > p:last-of-type {
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF99;
+      }
+    }
+  }
+  .image {
+    width: 658px;
+    height: 535px;
+    border-radius: 27px;
+  }
+
+}
+@media (max-width: $maxS) {
+  .clothesStorePopup {
+    .titlePopup {
+      font-size: 38px;
+      line-height: 38px;
+    }
+    .popupHeader {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    .topSection {
+      padding: 0 16px;
+    }
+    .textSection {
+      margin-bottom: 36px;
+      flex-direction: column;
+      & > p:first-of-type {
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFFCC;
+        margin-bottom: 24px;
+      }
+      & > p:last-of-type {
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF99;
+      }
+    }
+    .sliderSection {
+      margin-left: 16px;
+    }
+  }
+  .image {
+    width: 272px;
+    height: 221px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: $maxL) {
+
+}

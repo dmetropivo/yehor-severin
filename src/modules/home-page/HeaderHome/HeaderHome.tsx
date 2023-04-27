@@ -8,8 +8,10 @@ import DribbleIcon from 'public/svg/dribble.svg';
 import LinkedIn from 'public/svg/linkedIn.svg';
 import Link from 'next/link';
 import MobileMenu from '@/UI/buttons/MobileMenu/MobileMenu';
+import useMediaQuery from '@/hooks/useMediaQuery';
 
 const HeaderHome = () => {
+  const isMobile = useMediaQuery('(max-width: 768px)');
   return (
     <div className={styles.headerHome}>
       <div className={styles.topSection}>
@@ -28,14 +30,18 @@ const HeaderHome = () => {
         <div className={styles.desktopContactMe}>
           <Button text={'Contact me'} variant={'primary'} />
         </div>
-        <MobileMenu />
+        {isMobile ? <MobileMenu /> : <></>}
       </div>
       <div className={styles.separateLine} />
       <div className={styles.contactMeMobile}>
         <Button text={'Contact me'} variant={'primary'} />
       </div>
       <div className={styles.socialsContainer}>
-        <Link href={'https://www.behance.net/bf525e73/projects'}>
+        <Link
+          href={'https://www.behance.net/bf525e73/projects'}
+          passHref
+          target={'_blank'}
+        >
           <SVGButton>
             <BehanceIcon />
           </SVGButton>
@@ -45,7 +51,6 @@ const HeaderHome = () => {
             <DribbleIcon />
           </SVGButton>
         </Link>
-
         <Link href={'https://t.me/jaga00000'} passHref target={'_blank'}>
           <SVGButton>
             <TelegramIcon />

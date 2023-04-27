@@ -52,6 +52,7 @@ module.exports = {
     'no-restricted-globals': 'warn',
     'no-shadow': 'off',
     'no-underscore-dangle': 'off',
+    'no-useless-return': 'off',
     'prettier/prettier': [
       'warn',
       {
