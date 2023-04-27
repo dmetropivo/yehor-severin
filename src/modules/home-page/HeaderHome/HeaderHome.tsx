@@ -28,7 +28,9 @@ const HeaderHome = () => {
           </div>
         </div>
         <div className={styles.desktopContactMe}>
-          <Button text={'Contact me'} variant={'primary'} />
+          <Link href="mailto:yehorseverin@gmail.com" passHref>
+            <Button text={'Contact me'} variant={'primary'} />
+          </Link>
         </div>
         {isMobile ? <MobileMenu /> : <></>}
       </div>
