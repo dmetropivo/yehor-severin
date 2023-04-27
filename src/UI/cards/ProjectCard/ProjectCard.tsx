@@ -4,16 +4,16 @@ import Image from 'next/image';
 import ClothesStorePopup from '@/UI/popups/ClothesStorePopup/ClothesStorePopup';
 import { usePopup } from '@/contexts/PopupContext';
 
-interface IProjectCard {
-  id: string;
-  title?: any;
-  description?: any;
-  backgroundColor?: any;
-  backgroundImage?: any;
-  comingSoon?: any;
-  link?: any;
-  clickable?: any;
-}
+// interface IProjectCard {
+//   id: string;
+//   title?: any;
+//   description?: any;
+//   backgroundColor?: any;
+//   backgroundImage?: any;
+//   comingSoon?: any;
+//   link?: any;
+//   clickable?: any;
+// }
 
 // const ProjectImage = ({project}) => {
 //
@@ -22,7 +22,7 @@ interface IProjectCard {
 //   }
 // }
 
-const ProjectCard: FC<IProjectCard> = ({
+const ProjectCard = ({
   id,
   title = '',
   description = '',
