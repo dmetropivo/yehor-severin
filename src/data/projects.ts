@@ -38,7 +38,7 @@ export const projects = [
     backgroundColor: '#868686',
     backgroundImage: '/images/backgroundClothesStore.png',
     comingSoon: false,
-    link: null,
+    link: '',
     clickable: true,
   },
   {
@@ -58,7 +58,7 @@ export const projects = [
     backgroundColor: '',
     backgroundImage: '/images/backgroundComingSoon.png',
     comingSoon: true,
-    link: null,
+    link: '',
     clickable: false,
   },
 ];
