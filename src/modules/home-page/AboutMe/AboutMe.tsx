@@ -11,6 +11,7 @@ const AboutMe = () => {
       <p>{t('aboutMe.text')}</p>
       <div>
         <Link
+          passHref
           href="/CV/CV-7.pdf"
           alt="CV"
           target="_blank"
