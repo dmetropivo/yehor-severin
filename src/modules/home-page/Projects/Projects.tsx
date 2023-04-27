@@ -18,7 +18,6 @@ const Projects = () => {
               title={item.title}
               description={item.description}
               backgroundImage={item.backgroundImage}
-              backgroundColor={item.backgroundColor}
               comingSoon={item.comingSoon}
               link={item.link}
               clickable={item.clickable}
